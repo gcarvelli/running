@@ -1,0 +1,20 @@
+<%= form_for :excursion, url: excursions_path do |f| %>
+  <p>
+    <%= f.label :distance %><br>
+    <%= f.text_field :distance %>
+  </p>
+
+  <p>
+    <%= label_tag :time %><br>
+    <%= text_field_tag :time, nil, placeholder: '60:00', pattern: '\d{2}:\d{2}' %>
+  </p>
+
+  <p>
+    <%= f.label :calories %><br>
+    <%= f.number_field :calories %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
