@@ -1,5 +1,9 @@
 <%= form_for :excursion, url: excursions_path do |f| %>
   <p>
+    <%= f.label :date %><br>
+    <%= f.date_field :date %>
+  </p>
+  <p>
     <%= f.label :distance %><br>
     <%= f.text_field :distance %>
   </p>
