@@ -3,8 +3,8 @@ class CreateExcursions < ActiveRecord::Migration
     create_table :excursions do |t|
       t.date    :date
       t.decimal :distance
-      t.integer :hours
       t.integer :minutes
+      t.integer :seconds
       t.integer :calories
 
       t.timestamps null: false

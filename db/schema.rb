@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20160110175410) do
   create_table "excursions", force: :cascade do |t|
     t.date     "date"
     t.decimal  "distance"
-    t.integer  "hours"
     t.integer  "minutes"
+    t.integer  "seconds"
     t.integer  "calories"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

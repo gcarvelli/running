@@ -10,8 +10,8 @@ class ExcursionsController < ApplicationController
         time = (params[:time]).split(':')
         @excursion = Excursion.new(excursion_params)
         @excursion.date = Date.today
-        @excursion.hours = time[0]
-        @excursion.minutes = time[1]
+        @excursion.minutes = time[0]
+        @excursion.seconds = time[1]
         @excursion.save
 
         redirect_to root_path
