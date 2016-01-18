@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20160110175410) do
 
   create_table "excursions", force: :cascade do |t|
+    t.date     "date"
     t.decimal  "distance"
     t.integer  "hours"
     t.integer  "minutes"

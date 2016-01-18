@@ -1,6 +1,7 @@
 class CreateExcursions < ActiveRecord::Migration
   def change
     create_table :excursions do |t|
+      t.date    :date
       t.decimal :distance
       t.integer :hours
       t.integer :minutes
